@@ -12,10 +12,8 @@ function print(msg, event) {
 }
 
 window.myDebounce = (fn, delay) => {
-  console.log(arguments) 
   let timer;
    return function() {
-     console.log(arguments) 
      const args = arguments ;
       if(timer) clearTimeout(timer);
       const self = this;
